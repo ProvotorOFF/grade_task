@@ -1,5 +1,8 @@
-- name: Gather facts about the hosts
-  setup:
+- name: Get Python interpreter path
+  gather_facts: no
+  tasks:
+    - debug:
+        var: ansible_python_interpreter
 
 - name: Requests install
   pip:
