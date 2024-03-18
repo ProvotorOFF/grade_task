@@ -1,8 +1,4 @@
-- name: Get Python interpreter path
-  debug:
-    var: ansible_python_interpreter
-
 - name: Requests install
   pip:
     name: requests
-    executable: "{{ ansible_python_interpreter }}"
+    executable: python
