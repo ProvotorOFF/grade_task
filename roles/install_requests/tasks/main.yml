@@ -1,6 +1,6 @@
 - name: Install Python and pip, and install requests
   become: yes
-  tasks:
+  block:
     - name: Install Python and pip
       apt:
         update_cache: yes
