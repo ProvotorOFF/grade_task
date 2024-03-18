@@ -1,5 +1,4 @@
 - name: Gather facts
-  hosts: all
   tasks:
     - name: Gather facts about the hosts
       setup:
