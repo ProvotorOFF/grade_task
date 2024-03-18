@@ -1,5 +1,16 @@
-- name: Requests Install
+- name: Install pip3 and requests package
   become: yes
-  pip:
-    name: requests
-    executable: pip3
+  block:
+    - name: Update package list
+      apt:
+        update_cache: yes
+
+    - name: Install pip3
+      apt:
+        name: python3-pip
+        state: present
+
+    - name: Install requests package for Python
+      pip:
+        name: requests
+        executable: pip3
