@@ -41,7 +41,6 @@
             state: present
             update_cache: yes
             filename: docker
-            ignore_keyring: yes
         - name: Docker CE
           apt:
             name:
