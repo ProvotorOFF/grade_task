@@ -1,4 +1,4 @@
-- name: Установка модуля requests для Python
+- name: Requests Install
   become: yes
   pip:
     name: requests
