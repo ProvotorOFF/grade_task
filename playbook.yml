@@ -3,7 +3,6 @@
   hosts: all
   become: yes
   roles:
-    - install_requests
     - docker
     - nginx
 
