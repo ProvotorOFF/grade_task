@@ -1,0 +1,4 @@
+- name: Requests install
+  pip:
+    name: requests
+    executable: /usr/bin/pip3

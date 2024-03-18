@@ -1,0 +1,15 @@
+---
+- name: Pull Nginx Docker image
+  docker_image:
+    name: nginx
+    source: pull
+    state: present
+
+- name: Run Nginx container
+  docker_container:
+    name: my_nginx_container
+    image: nginx
+    state: started
+    ports:
+      - "80:80"
+
