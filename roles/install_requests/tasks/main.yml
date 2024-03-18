@@ -1,7 +1,6 @@
-- name: Gather facts
-  tasks:
-    - name: Gather facts about the hosts
-      setup:
+- name: Gather facts about the hosts
+  setup:
+
 - name: Requests install
   pip:
     name: requests
