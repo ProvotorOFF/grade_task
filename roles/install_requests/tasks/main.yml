@@ -2,4 +2,4 @@
   become: yes
   pip:
     name: requests
-    executable: python3
+    executable: pip3
